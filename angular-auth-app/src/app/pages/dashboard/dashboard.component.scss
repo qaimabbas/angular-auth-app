@@ -1,0 +1,39 @@
+/* app.component.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+
+nav {
+  background-color: #000080; /* Navy Blue */
+  overflow: hidden;
+}
+
+nav a {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #8B0000; /* Dark Red */
+  color: #fff;
+}
+
+.nav-right {
+  float: right;
+}
+
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+

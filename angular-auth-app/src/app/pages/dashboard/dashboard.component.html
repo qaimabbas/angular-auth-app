@@ -1,0 +1,21 @@
+
+<main *ngIf="(auth.isAuthenticated$ | async)">
+  <h2>Explore Our Features</h2>
+    <a routerLink="users-list">USERS LIST</a>
+  <br>
+    <a routerLink="user-information">USER INFO</a>
+  <p>Get started by signing up or logging in.</p>
+  <ul *ngIf="auth.user$ | async as user">
+    <li>{{ user.name }}</li>
+    <li>{{ user.email }}</li>
+    <li>{{user.sub}}</li>
+  </ul>
+</main>
+
+
+
+<main *ngIf="!(auth.isAuthenticated$ | async)">
+<h2>
+  Login For Access to resources
+</h2>
+</main>
